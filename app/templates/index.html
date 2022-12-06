@@ -1,5 +1,4 @@
 {% extends 'layout.html' %}
-{% load static %}
 {% block content %}
 
 <style>
@@ -328,18 +327,18 @@
 
   }
 </style>
-
+{% load static %}
 <body class="body">
   <div class="container">
     <div class="hello">
       <a class="hi" href="{% url 'hub'%}"> Hello world...
-        <span class="title">.ARIZONA </span> </a>
+        <span class="title">.A R I Z O N A</span> </a>
     </div>
     <br>
 
     <div class="btn">
       <div class="title">
-        <a href="{% static 'asset/app-release.apk'%}" >RegistrApp Download <span>|| ARIZONA </span></a>
+        <a href="{% static '/assets/registrapp.apk'%}" >RegistrApp Download <span>|| ARIZONA </span></a>
       </div>
     </div>
   </div>
