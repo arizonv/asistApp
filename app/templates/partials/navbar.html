@@ -9,6 +9,11 @@
         justify-content: space-between;
     }
 
+    nav .arizona{
+        color: #918f8fd0;
+    }
+
+
     nav ul {
         float: right;
         margin: 5px;
@@ -115,7 +120,7 @@
 
 {% load user_agents %}
 <nav>
-    <a href="#" class="arizona">ARZNA ||
+    <a href="{% url 'duoc'%}" class="arizona">ARZNA ||
         {% if request|is_mobile %}
         MODO : MOVIL
         {% endif %}
@@ -133,8 +138,8 @@
         <i class="fas fa-bars"></i>
     </label>
     <ul>
-        <li><a class="active" href="{% url 'index'%}">Home</a></li>
-        <li><a href="{% url 'contacto'%}">Git</a></li>
-        <li><a class="nav-link disabled"> A R I Z O N A </a></li>
+        <li><a href="{% url 'duoc'%}">DuocApp ||</a></li>
+        <li><a class="active" href="{% url 'index'%}">Download</a></li>
+        <li><a  href="{% url 'contacto'%}" class="arizona"> A R I Z O N A </a></li>
     </ul>
 </nav>
