@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     background: #000000;
-    min-width: 370px
+    min-width: 370px;
   }
 
   .hello {
@@ -62,18 +62,18 @@
 
   @keyframes letter-flicker {
     2% {
-      color: rgb(240, 225, 75 );
-      text-shadow: 0 0 15px rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
+      text-shadow: 0 0 15px rgb(240, 225, 75);
     }
 
     3% {
-      color: rgba(240, 225, 75 );
+      color: rgba(240, 225, 75);
       text-shadow: none;
     }
 
     6% {
-      color: rgb(240, 225, 75 );
-      text-shadow: 0 0 15px rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
+      text-shadow: 0 0 15px rgb(240, 225, 75);
     }
 
     9% {
@@ -82,8 +82,8 @@
     }
 
     11% {
-      color: rgb(240, 225, 75 );
-      text-shadow: 0 0 15px rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
+      text-shadow: 0 0 15px rgb(240, 225, 75);
     }
 
     14% {
@@ -92,13 +92,13 @@
     }
 
     18% {
-      color: rgb(240, 225, 75 );
-      text-shadow: 0 0 15px rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
+      text-shadow: 0 0 15px rgb(240, 225, 75);
     }
 
     32% {
-      color: rgb(240, 225, 75 );
-      text-shadow: 0 0 15px rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
+      text-shadow: 0 0 15px rgb(240, 225, 75);
     }
 
     33% {
@@ -107,7 +107,7 @@
     }
 
     37% {
-      color: rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
       text-shadow: 0 0 15px rgba(255, 184, 0, 1);
     }
 
@@ -117,13 +117,13 @@
     }
 
     40% {
-      color: rgb(240, 225, 75 );
-      text-shadow: 0 0 15px rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
+      text-shadow: 0 0 15px rgb(240, 225, 75);
     }
 
     100% {
-      color: rgb(240, 225, 75 );
-      text-shadow: 0 0 15px rgb(240, 225, 75 );
+      color: rgb(240, 225, 75);
+      text-shadow: 0 0 15px rgb(240, 225, 75);
     }
   }
 
@@ -286,7 +286,7 @@
     }
   }
 
-  @media only screen and ( max-width: 1010px) {
+  @media only screen and (max-width: 1010px) {
 
     .hello a {
       color: rgb(60 59 59);
@@ -323,12 +323,19 @@
       display: none;
     }
 
+    .hello a {
+      color: rgb(60 59 59);
+      font-size: 40px;
+
+    }
+
 
 
 
   }
 </style>
 {% load static %}
+
 <body class="body">
   <div class="container">
     <div class="hello">
@@ -339,7 +346,7 @@
 
     <div class="btn">
       <div class="title">
-        <a href="{% static '/assets/registrapp.apk'%}" >RegistrApp Download <span>|| ARIZONA </span></a>
+        <a href="{% static '/assets/registrapp.apk'%}">RegistrApp Download <span>|| ARIZONA </span></a>
       </div>
     </div>
   </div>
